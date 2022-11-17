@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Children's Advil/Tylenol dose calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Children's Advil/Tylenol dose Calculator</h1>
+        <h2>Age</h2>
+        <div class="age">
+            <div class="under3">
+                <input type="radio" id="under3" name="age" value="under3">
+                <label for="under3">
+                    <div class="under3-box box">
+                        Under 3 months old
+                    </div>
+                </label>
+            </div>
+            <div class="under6">
+                <input type="radio" id="under6" name="age" value="under6">
+                <label for="under6">
+                    <div class="under6-box box">
+                        Between 3 months and 6 months old
+                    </div>
+                </label>
+            </div>
+            <div class="over6">
+                <input type="radio" id="over6" name="age" value="over6">
+                <label for="over6">
+                    <div class="over6-box box">
+                        Over 6 months old
+                    </div>
+                </label>
+            </div>
+        </div>
+        <h2 class="med-title">Medication</h2>
+        <div class="medication">
+            <div class="tylenol">
+                <input type="radio" id="tylenol" name="med" value="tylenol">
+                <label for="tylenol">
+                    <div class="tylenol-box box">
+                        Tylenol(Acetaminophen)
+                    </div>
+                </label>
+            </div>
+            <div class="advil">
+                <input type="radio" id="advil" name="med" value="advil">
+                <label for="advil">
+                    <div class="advil-box box">
+                        Advil(Ibuprofen)
+                    </div>
+                </label>
+            </div>
+        </div>
+        <h2 class="wt-title">Weight</h2>
+        <select id="tylenol-wt">
+            <option value="none">Choose Weight</option>
+            <option value="11">11 - 15.9 kg / 24 - 34 lbs</option>
+            <option value="16">16 - 21.9 kg / 35 - 47 lbs</option>
+            <option value="22">22 - 32.9 kg / 48 - 72 lbs</option>
+            <option value="33">33 - 45 kg / 73 - 99 lbs</option>
+            <option value="45">greater than 45 kg / 99 lbs</option>
+        </select>
+        <select id="advil-wt">
+            <option value="none">Choose Weight</option>
+            <option value="10">10 - 19.9 kg / 22 - 43 lbs</option>
+            <option value="20">20 - 29.9 kg / 44 - 65 lbs</option>
+            <option value="30">30 - 40 kg / 66 - 88 lbs</option>
+            <option value="40">greater than 40 kg / 88 lbs</option>
+        </select>
+        
+        <div class="result">
+            <p id = "result"></p>
+            <img src="img/sample.PNG" alt="tablets examples">
+        </div>
+        <button type="button">Calculate Again</button>
+    </div>
+</body>
+</html>
